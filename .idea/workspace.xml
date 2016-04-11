@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6596add2-8436-4681-9319-499890ae7561" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/test_button/loginPhoton.js" afterPath="$PROJECT_DIR$/routes/test_button/loginPhoton.js" />
-    </list>
+    <list default="true" id="6596add2-8436-4681-9319-499890ae7561" name="Default" comment="" />
     <ignored path="final_project_web.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +66,8 @@
       <file leaf-file-name="loginPhoton.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/test_button/loginPhoton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73626375">
-              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.10989011">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -489,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/test_button/loginPhoton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73626375">
-          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.10989011">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
