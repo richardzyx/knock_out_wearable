@@ -6,7 +6,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('test_button', { title: 'KNOCKOUT' });
+  res.render('test_button', { title: 'KNOCKOUT' , message: ''});
 });
 
 var postPhoton = require('./test_button/postPhoton');
