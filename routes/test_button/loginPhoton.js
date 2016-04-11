@@ -9,7 +9,9 @@ var Particle = require('particle-api-js');
 var particle = new Particle();
 
 router.get('/', function(req, res, next) {
-    particle.login({username: 'tuftsknockout@gmail.com', password: 'kn0ck0ut'}).then(
+    var username = req.query.username;
+    var password = req.query.password;
+    particle.login({username: username, password: password}).then(
         function onFulfilled(data){
             console.log('API call completed on promise resolve: ', data.body.access_token);
         }
