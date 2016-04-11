@@ -10,9 +10,20 @@ a {
 button {
 	background-color: #8B0000;
 	border: none;
-	color: white;
+	display:block;
 	height: 50px;
 	width: 300px;
 	font-size: 18px;
+	text-align: center;
 	margin: 0 auto;
+}
+
+.btn {
+	color: white;
+}
+
+h1.title{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 100px;
+	margin-bottom: 50px;
 }
