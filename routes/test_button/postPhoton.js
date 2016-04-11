@@ -23,7 +23,7 @@ router.use('/', function(req, res, next) {
         //logger.error(err);
         res.json({
             result: 99,
-            message: "Unknown Error"
+            message: "Unknown"
         });
     });
 });
