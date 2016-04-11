@@ -1,5 +1,6 @@
 #intellij config
 .idea
+.ino
 
 #mac file
 .DS_Store
