@@ -23,7 +23,7 @@ router.use('/', function(req, res, next) {
         //logger.error(err);
         res.json({
             result: 99,
-            message: "Unknown Error"
+            message: "Unknown"
         });
     });
 });
@@ -31,6 +31,7 @@ router.use('/', function(req, res, next) {
 // Query for all the user with group not the given number
 router.get('/', function(req, res, next) {    //pass mysql_Service the list of users accessing the server
     console.log("testing for logging");
+
     res.json({
         result: 99,
         message: "Unknown Error"
