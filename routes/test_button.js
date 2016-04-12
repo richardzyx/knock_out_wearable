@@ -6,7 +6,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('test_button', { title: 'KNOCKOUT' , message: ''});
+  res.render('test_button', { title: 'KNOCKOUT' , message: '', path: 'home'});
 });
 
 var postPhoton = require('./test_button/postPhoton');
@@ -18,6 +18,5 @@ router.use('/', function(req, res, next) {
 
 router.use('/postPhoton', postPhoton);
 router.use('/loginPhoton', loginPhoton);
-
 
 module.exports = router;
