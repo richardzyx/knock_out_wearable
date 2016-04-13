@@ -33,7 +33,28 @@ function onPlayerStateChange(event) {
     setTimeout(stopVideo, 6000);
     done = true;
   }
+  if(event.data==1) { // playing
+      var myTimer = setInterval(function(){ 
+          var time;
+          time = player.getCurrentTime();
+          $("#current-time").text(formatTime(time));
+      }, 100);
+  }
+  else { // not playing
+      clearInterval(myTimer);
+  }
 }
 function stopVideo() {
   player.stopVideo();
+}
+
+function formatTime(time){
+    time = Math.round(time);
+
+    var minutes = Math.floor(time / 60),
+    seconds = time - minutes * 60;
+
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    return minutes + ":" + seconds;
 }
