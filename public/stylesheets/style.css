@@ -1,13 +1,22 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  font: 14px Impact, Charcoal, sans-serif;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width:100%;
+  background-image: url("/images/background.png");
+  background-position: 50% 0%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #333333;
 }
 
 a {
   color: #00B7FF;
 }
 
-button {
+button.btn {
 	background-color: #8B0000;
 	border: none;
 	display:block;
@@ -18,12 +27,209 @@ button {
 	margin: 0 auto;
 }
 
+button.navbar-toggle {
+	background-color: #fff;
+}
+
 .btn {
 	color: white;
 }
+img.star_dividor {
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+}
 
+img.star_dividor.video {
+	margin: 15px auto;
+} 
+h1.video-title {
+	color: #8B0000;
+	font-size: 60px;
+}
 h1.title{
-	font-family: Impact, Charcoal, sans-serif;
-	font-size: 100px;
-	margin-bottom: 50px;
+	font-size: 120px;
+	margin-top: 0px;
+}
+h1 span.color_red {
+	color: #8B0000;
+}
+@media screen and (max-width: 800px) {
+	h1.title{
+		font-size: 90px;
+	}
+}
+@media screen and (max-width: 500px) {
+	h1.title{
+		font-size: 70px;
+	}
+	h1.video-title {
+	font-size: 40px;
+	}
+	img.star_dividor {
+	width: 250px;
+	}
+}
+
+.navbar-nav {
+/*	display: inline-block;
+	float: none;
+	vertical-align: top;*/
+	text-align: center;
+	width: 100%;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+
+}
+
+.navbar {
+	min-height: 40px;
+}
+.navbar-default{
+	border: none;
+	border-top: black 2px solid;
+	border-bottom: black 2px solid;
+	border-color: black;
+	background-color: transparent;
+	background-image: none;
+	border-radius: 0px;
+}
+.logo_img {
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo_img_mini {
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+.navbar-nav li a {
+	padding: 10px 80px;
+	color: #333333;
+}
+.nav.navbar-nav > li > a {
+	color: #333333;
+}
+.nav.navbar-nav > li > a:hover,
+.nav.navbar-nav > li.active > a:hover,
+.nav.navbar-nav > li.active > a {
+	color: #8B0000;
+}
+
+#player {
+	display: block;
+	margin: 0 auto;
+}
+button.player, button.player:hover {
+	display: inline-block;
+	height: 60px;
+	text-align: center;
+	color: white;
+}
+button.player:hover,  
+button.player:link, 
+button.player:visited,
+button.player:active,
+button.player:focus{
+	color: white;
+	outline: none;
+}
+span.player_name {
+	display: block;
+	padding-top: 10px;
+}
+button.player.player2 {
+	margin-left:40px;
+}
+img.player_button {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+div.player_group{
+	text-align: center;
+	display: block;
+	margin: 40px auto;
+}
+
+button.player.player1.button_outline,
+button.player.player2.button_outline {
+	border: #FFBB02 3px solid;
+	background-color: #ad4c4c;
+	padding-top: 3px;
+}
+
+button.btn-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; 
+  width: 23px;
+  height: 23px;
+  font-size: 15px;
+  line-height: 15px;
+}
+img.silhouette {
+	height: 400px;
+
+}
+.image-container {
+	display: inline-block;
+    position: relative;
+    margin: 20px auto;
+}
+/* heart */
+button.motor1 {
+	position: absolute;  
+    left: 95px;
+    top: 100px;
+}
+/*left shoulder */
+button.motor2 {
+	position: absolute;  
+    left: 72px;
+    top: 86px;
+}
+/*right shoulder */
+button.motor3 {
+	position: absolute;  
+    left: 145px;
+    top: 81px;
+}
+/* left side */
+button.motor4 {
+	position: absolute;  
+    left: 90px;
+    top: 140px;
+}
+/* right side */
+button.motor5 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+/* left forearm */
+button.motor6 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+button.motor7 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+.wrap {
+	text-align: center;
+}
+button.motor.button_on {
+	background-color: #BADA55;
 }
