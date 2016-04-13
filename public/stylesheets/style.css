@@ -184,8 +184,30 @@ img.silhouette {
 .image-container {
 	display: inline-block;
     position: relative;
-    margin: 20px auto;
+    margin: 0 auto;
 }
+button.btn.motor:focus,
+button.btn.motor_red:focus,
+button.btn.motor_green:focus {
+	outline: none;
+}
+button.btn.motor_green {
+	background-color: #BADA55;
+	display: inline;
+	margin: 3px;
+	margin-right: 10px;
+	text-align: left;
+
+}
+button.btn.motor_red {
+	background-color: #8B0000;
+	display: inline;
+	margin: 3px;
+	margin-right: 10px;
+	text-align: left;
+
+}
+
 /* heart */
 button.motor1 {
 	position: absolute;  
@@ -219,17 +241,53 @@ button.motor5 {
 /* left forearm */
 button.motor6 {
 	position: absolute;  
-    left: 125px;
-    top: 140px;
+    left: 30px;
+    top: 120px;
 }
+/* right forearm */
 button.motor7 {
 	position: absolute;  
-    left: 125px;
-    top: 140px;
+    left: 185px;
+    top: 120px;
+}
+/* left glove */
+button.motor8 {
+	position: absolute;  
+    left: 65px;
+    top: 150px;
+}
+/* right glove */
+button.motor9 {
+	position: absolute;  
+    left: 150px;
+    top: 150px;
 }
 .wrap {
 	text-align: center;
 }
 button.motor.button_on {
 	background-color: #BADA55;
+}
+
+hr {
+	border-top: 2px solid black;
+}
+p.footer {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+
+}
+div.footer {
+	margin:50px 0;
+}
+div.box {
+	width:150px;
+	border: 2px solid black;
+	display: inline-block;
+	float left;
+	padding: 5px;
+}
+p.box_text {
+	display: inline;
+	float: none;
 }
