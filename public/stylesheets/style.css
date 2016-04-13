@@ -8,6 +8,7 @@ body {
   background-image: url("/images/background.png");
   background-position: 50% 0%;
   background-repeat: repeat;
+  background-attachment: fixed;
   color: #333333;
 }
 
@@ -127,4 +128,108 @@ h1 span.color_red {
 #player {
 	display: block;
 	margin: 0 auto;
+}
+button.player, button.player:hover {
+	display: inline-block;
+	height: 60px;
+	text-align: center;
+	color: white;
+}
+button.player:hover,  
+button.player:link, 
+button.player:visited,
+button.player:active,
+button.player:focus{
+	color: white;
+	outline: none;
+}
+span.player_name {
+	display: block;
+	padding-top: 10px;
+}
+button.player.player2 {
+	margin-left:40px;
+}
+img.player_button {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+div.player_group{
+	text-align: center;
+	display: block;
+	margin: 40px auto;
+}
+
+button.player.player1.button_outline,
+button.player.player2.button_outline {
+	border: #FFBB02 3px solid;
+	background-color: #ad4c4c;
+	padding-top: 3px;
+}
+
+button.btn-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; 
+  width: 23px;
+  height: 23px;
+  font-size: 15px;
+  line-height: 15px;
+}
+img.silhouette {
+	height: 400px;
+
+}
+.image-container {
+	display: inline-block;
+    position: relative;
+    margin: 20px auto;
+}
+/* heart */
+button.motor1 {
+	position: absolute;  
+    left: 95px;
+    top: 100px;
+}
+/*left shoulder */
+button.motor2 {
+	position: absolute;  
+    left: 72px;
+    top: 86px;
+}
+/*right shoulder */
+button.motor3 {
+	position: absolute;  
+    left: 145px;
+    top: 81px;
+}
+/* left side */
+button.motor4 {
+	position: absolute;  
+    left: 90px;
+    top: 140px;
+}
+/* right side */
+button.motor5 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+/* left forearm */
+button.motor6 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+button.motor7 {
+	position: absolute;  
+    left: 125px;
+    top: 140px;
+}
+.wrap {
+	text-align: center;
+}
+button.motor.button_on {
+	background-color: #BADA55;
 }
