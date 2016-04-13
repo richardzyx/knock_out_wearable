@@ -60,14 +60,14 @@
 @media screen and (max-width: 920px) {
 	.video-gallery {
 		width: 700px;
-		height: 600px;
+		height: 700px;
 	}
 }
 
 @media screen and (max-width: 730px) {
 	.video-gallery {
 		width: 600px;
-		height: 600px;
+		height: 800px;
 	}
 	.video-gallery li a,
 	.video-gallery li a img {
@@ -80,7 +80,7 @@
 @media screen and (max-width: 630px) {
 	.video-gallery {
 		width: 400px;
-		height: 600px;
+		height: 800px;
 	}
 	.video-gallery li a,
 	.video-gallery li a img {
@@ -90,16 +90,16 @@
 	width:150px;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.video-gallery {
 		width: 350px;
-		height: 600px;
+		height: 700px;
 	}
 	.video-gallery li a,
 	.video-gallery li a img {
 	display: block;
 	position: relative;
 	height:135px;
-	width:135spx;
+	width:135px;
 	}
 }

@@ -43,9 +43,13 @@ img.star_dividor {
 img.star_dividor.video {
 	margin: 15px auto;
 } 
-h1.video-title {
+h1.videos-title {
 	color: #8B0000;
 	font-size: 60px;
+}
+h1.video-title {
+	color: #8B0000;
+	font-size: 40px;
 }
 h1.title{
 	font-size: 120px;
@@ -128,6 +132,8 @@ h1 span.color_red {
 #player {
 	display: block;
 	margin: 0 auto;
+	width: 70%;
+	height: 80%;
 }
 button.player, button.player:hover {
 	display: inline-block;
@@ -158,7 +164,8 @@ img.player_button {
 div.player_group{
 	text-align: center;
 	display: block;
-	margin: 40px auto;
+	margin: 25px auto;
+	margin-top: 20px;
 }
 
 button.player.player1.button_outline,
@@ -178,7 +185,7 @@ button.btn-circle {
   line-height: 15px;
 }
 img.silhouette {
-	height: 400px;
+	height: 375px;
 
 }
 .image-container {
@@ -211,56 +218,56 @@ button.btn.motor_red {
 /* heart */
 button.motor1 {
 	position: absolute;  
-    left: 95px;
-    top: 100px;
+    left: 75px;
+    top: 75px;
 }
 /*left shoulder */
 button.motor2 {
 	position: absolute;  
-    left: 72px;
-    top: 86px;
+    left: 47px;
+    top: 63px;
 }
 /*right shoulder */
 button.motor3 {
 	position: absolute;  
-    left: 145px;
-    top: 81px;
+    left: 122px;
+    top: 57px;
 }
 /* left side */
 button.motor4 {
 	position: absolute;  
-    left: 90px;
-    top: 140px;
+    left: 68px;
+    top: 117px;
 }
 /* right side */
 button.motor5 {
 	position: absolute;  
-    left: 125px;
-    top: 140px;
+    left: 100px;
+    top: 117px;
 }
 /* left forearm */
 button.motor6 {
 	position: absolute;  
-    left: 30px;
-    top: 120px;
+    left: 10px;
+    top: 100px;
 }
 /* right forearm */
 button.motor7 {
 	position: absolute;  
-    left: 185px;
-    top: 120px;
+    left: 160px;
+    top: 100px;
 }
 /* left glove */
 button.motor8 {
 	position: absolute;  
-    left: 65px;
-    top: 150px;
+    left: 37px;
+    top: 125px;
 }
 /* right glove */
 button.motor9 {
 	position: absolute;  
-    left: 150px;
-    top: 150px;
+    left: 125px;
+    top: 125px;
 }
 .wrap {
 	text-align: center;
