@@ -28,13 +28,19 @@ router.use('*', function(req, res, next) {
         });
     }).then(function(devices){
         var device_id = devices.body[0].id;
-        var fnPr = particle.callFunction({ deviceId: device_id, name: 'click', argument: 'string', auth: token });
+        var fnPr = particle.callFunction({ deviceId: device_id, name: 'click', argument: 'knockout', auth: token });
 
-        return fnPr.then(function(data) {
-            console.log('Function called succesfully:', data);
-            res.render('test_button', { title: 'KNOCKOUT' , message: JSON.stringify(data)});
+        return fnPr.then(function(suc) {
+            console.log("fn0 complete");
+            return suc;
+        });
+    }).then(function(suc){
+        var fnPr2 = particle.callFunction({ deviceId: device_id, name: 'click', argument: 'light', auth: token });
+
+        return fnPr2.then(function(suc) {
+            console.log("fn1 complete");
+            res.render('test_button', { title: 'KNOCKOUT' , message: JSON.stringify(suc)});
         }, function(err) {
-            console.log('An error occurred:', err);
             throw err;
         });
     }).catch(function(err){
