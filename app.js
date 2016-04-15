@@ -12,6 +12,7 @@ var hbs = require('hbs');
 var test_button = require('./routes/test_button');
 var videos = require('./routes/videos');
 var contact = require('./routes/contact');
+var index = require('./routes/index');
 
 var app = express();
 
@@ -39,6 +40,8 @@ app.use('/test_button', test_button);
 app.use('/videos', videos);
 
 app.use('/contact', contact)
+
+app.use('/', index);
 
 //app.use('/users', users);
 
