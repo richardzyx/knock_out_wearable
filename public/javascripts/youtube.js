@@ -36,7 +36,7 @@ function onPlayerStateChange(event) {
       var myTimer = setInterval(function(){ 
           var time;
           time = player.getCurrentTime();
-          if(string_to_second(formatTime(time)) > string_to_second(time_recorded)){
+          if(string_to_second(formatTime(time)) != string_to_second(time_recorded)){
               console.log("in if loop");
               time_recorded = formatTime(time);
               $("#current-time").text(time_recorded);
