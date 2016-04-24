@@ -32,10 +32,10 @@ router.use('*', function(req, res, next) {
 
         return fnPr.then(function(suc) {
             console.log("fn0 complete");
-            return suc;
+            return device_id;
         });
-    }).then(function(suc){
-        var fnPr2 = particle.callFunction({ deviceId: device_id, name: 'click', argument: 'light', auth: token });
+    }).then(function(device_id){
+        var fnPr2 = particle.callFunction({ deviceId: device_id, name: 'parse_motor', argument: '01010002000003', auth: token });
 
         return fnPr2.then(function(suc) {
             console.log("fn1 complete");
