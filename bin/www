@@ -95,6 +95,9 @@ io.on('connection', function (socket) {
     socket.on('time', function (data) {
         socket_handler.time_handler(data);
     });
+    socket.on('toggle', function (data) {
+        socket_handler.toggle_handler(data);
+    });
     socket.on('disconnect', function(){
         socket_handler.error_handler();
     });

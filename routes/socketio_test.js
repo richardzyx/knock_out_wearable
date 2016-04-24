@@ -19,3 +19,7 @@ exports.time_handler = function (time) {
 exports.error_handler = function () {
     console.log("Socket Disconnected!")
 };
+
+exports.toggle_handler = function (data) {
+    return particle_function.toggle(data.motor);
+}
