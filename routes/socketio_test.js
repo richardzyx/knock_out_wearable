@@ -9,9 +9,11 @@
 //     });
 //     socket.on('disconnect', function () { });
 // });
+var particle_function = require('../lib/particle_function');
 
 exports.time_handler = function (time) {
     console.log(time.time)
+    return particle_function.time(time.time);
 };
 
 exports.error_handler = function () {
