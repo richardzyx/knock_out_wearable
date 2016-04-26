@@ -26,13 +26,13 @@ $(document).ready(function(){
     		$(this).removeClass('button_on');
 			classNames = $(this).attr('class').split(' ');
 			console.log(classNames[classNames.length - 1]);
-            socket = io('http://tuftsknockout.herokuapp.com/');
+            socket = io('http://localhost:3000/');
             socket.emit('toggle', { motor: classNames[classNames.length - 1] });
     	} else {
 			classNames = $(this).attr('class').split(' ');
 			console.log(classNames[classNames.length - 1]);
         	$(this).addClass('button_on');
-            socket = io('http://tuftsknockout.herokuapp.com/');
+            socket = io('http://localhost:3000/');
             socket.emit('toggle', { motor: classNames[classNames.length - 1] });
         }
     });
