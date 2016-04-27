@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('final_project_web:server');
 var http = require('http');
+var socket_handler = require('../routes/socketio_test');
 
 /**
  * Get port from environment and store in Express.
@@ -88,3 +89,16 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+var io = require('socket.io')(server);
+io.on('connection', function (socket) {
+    socket.on('time', function (data) {
+        socket_handler.time_handler(data);
+    });
+    socket.on('toggle', function (data) {
+        socket_handler.toggle_handler(data);
+    });
+    socket.on('disconnect', function(){
+        socket_handler.error_handler();
+    });
+});

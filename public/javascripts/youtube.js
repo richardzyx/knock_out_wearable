@@ -29,13 +29,20 @@ function onPlayerReady(event) {
 //    The function indicates that when playing a video (state=1),
 //    the player should play for six seconds and then stop.
 var done = false;
+var time_recorded = "0:0";
 function onPlayerStateChange(event) {
 
   if(event.data==1) { // playing
       var myTimer = setInterval(function(){ 
           var time;
           time = player.getCurrentTime();
-          $("#current-time").text(formatTime(time));
+          if(string_to_second(formatTime(time)) != string_to_second(time_recorded)){
+              console.log("in if loop");
+              time_recorded = formatTime(time);
+              $("#current-time").text(time_recorded);
+              var socket = io('http://localhost:3000/');
+              socket.emit('time', { time: time_recorded });
+          }
       }, 100);
   }
   else { // not playing
@@ -44,6 +51,14 @@ function onPlayerStateChange(event) {
 }
 function stopVideo() {
   player.stopVideo();
+}
+
+function string_to_second(time_string){
+    var times = time_string.split(":");
+    var minutes = times[0];
+    var seconds = times[1];
+    seconds = parseInt(seconds, 10) + (parseInt(minutes, 10) * 60);
+    return seconds
 }
 
 function formatTime(time){

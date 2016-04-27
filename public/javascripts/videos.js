@@ -19,12 +19,21 @@ $(document).ready(function(){
         	$('button.player.player1').removeClass('button_outline');
         }
     });
+    var classNames, socket;
     $('button.motor').click(function(){
     	console.log("hi");
     	if ($(this).hasClass('button_on')) {
     		$(this).removeClass('button_on');
+			classNames = $(this).attr('class').split(' ');
+			console.log(classNames[classNames.length - 1]);
+            socket = io('http://localhost:3000/');
+            socket.emit('toggle', { motor: classNames[classNames.length - 1] });
     	} else {
+			classNames = $(this).attr('class').split(' ');
+			console.log(classNames[classNames.length - 1]);
         	$(this).addClass('button_on');
+            socket = io('http://localhost:3000/');
+            socket.emit('toggle', { motor: classNames[classNames.length - 1] });
         }
     });
 });
