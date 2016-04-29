@@ -19,7 +19,6 @@ function onYouTubeIframeAPIReady() {
     }
   });
   $(window).load(function(){
-
     player.seekTo(64);
   });
 }
