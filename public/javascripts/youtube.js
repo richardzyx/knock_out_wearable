@@ -44,6 +44,7 @@ function onPlayerStateChange(event) {
               time_recorded = formatTime(time);
               $("#current-time").text(time_recorded);
               var socket = io('http://tuftsknockout.herokuapp.com/');
+              // var socket = io('http://localhost:3000/');
               socket.emit('time', { time: time_recorded });
           }
       }, 100);
