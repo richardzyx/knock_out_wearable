@@ -226,7 +226,7 @@ button.btn.motor_red {
 }
 
 /* heart */
-button.motor1 {
+button.motor4 {
 	position: absolute;  
     left: 75px;
     top: 75px;
@@ -238,13 +238,13 @@ button.motor2 {
     top: 63px;
 }
 /*right shoulder */
-button.motor3 {
+button.motor6 {
 	position: absolute;  
     left: 122px;
     top: 57px;
 }
 /* left side */
-button.motor4 {
+button.motor3 {
 	position: absolute;  
     left: 68px;
     top: 117px;
@@ -256,7 +256,7 @@ button.motor5 {
     top: 117px;
 }
 /* left forearm */
-button.motor6 {
+button.motor1 {
 	position: absolute;  
     left: 10px;
     top: 100px;
@@ -268,13 +268,13 @@ button.motor7 {
     top: 100px;
 }
 /* left glove */
-button.motor8 {
+button.motor0 {
 	position: absolute;  
     left: 37px;
     top: 125px;
 }
 /* right glove */
-button.motor9 {
+button.motor8 {
 	position: absolute;  
     left: 125px;
     top: 125px;
