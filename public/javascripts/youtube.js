@@ -43,7 +43,7 @@ function onPlayerStateChange(event) {
               console.log("in if loop");
               time_recorded = formatTime(time);
               $("#current-time").text(time_recorded);
-              var socket = io('http://localhost:3000/');
+              var socket = io('http://tuftsknockout.herokuapp.com/');
               socket.emit('time', { time: time_recorded });
           }
       }, 100);
