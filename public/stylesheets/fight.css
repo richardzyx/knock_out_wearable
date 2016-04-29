@@ -63,7 +63,8 @@ img.silhouette {
 .image-container {
 	display: inline-block;
     position: relative;
-    margin: 0 auto;
+    float: left;
+    
 }
 button.btn.motor:focus,
 button.btn.motor_red:focus,
@@ -142,7 +143,10 @@ button.motor9 {
     top: 125px;
 }
 .wrap {
+	width: 30%;
 	text-align: center;
+	margin: 0 auto;
+	overflow: auto;
 }
 button.motor.button_on {
 	background-color: #BADA55;
@@ -153,8 +157,11 @@ div.box {
 	width:170px;
 	border: 2px solid black;
 	display: inline-block;
+	position: relative;
 	float: left;
 	padding: 5px;
+	margin-left: 50px;
+	margin-top: 100px;
 }
 p.box_text {
 	display: inline;
@@ -170,11 +177,13 @@ button.btn.toggle {
 }
 button.btn.toggle.btn-primary {
 	background-color: #8B0000;
+	color:white;
 
 }
 button.btn.toggle.btn-default {
 	background-image: none;
-	background-color: #8B0000;
+	background-color: gray;
+	color: white;
 
 }
 
