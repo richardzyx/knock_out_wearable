@@ -11,12 +11,17 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: 'Z5rnxsMvXM0',
+    videoId: '0ixBktB_akQ',
+    startSeconds: 64,
     playerVars: {'iv_load_policy': 3, 'autoplay': 0},
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
     }
+  });
+$(window).load(function(){
+
+    player.seekTo(64);
   });
 }
 
