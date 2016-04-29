@@ -14,5 +14,6 @@ exports.error_handler = function () {
 };
 
 exports.toggle_handler = function (data) {
+    console.log("toggle handler received:"+data);
     return particle_function.toggle(data.motor);
 };
