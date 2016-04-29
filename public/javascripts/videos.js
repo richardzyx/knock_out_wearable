@@ -18,8 +18,8 @@ $(document).ready(function(){
         }
     });
     var classNames, socket_toggle;
-    socket_toggle = io('http://tuftsknockout.herokuapp.com/');
-    // socket = io('http://localhost:3000/');
+    // socket_toggle = io('http://tuftsknockout.herokuapp.com/');
+    socket_toggle = io('http://localhost:3000/');
     $('button.motor').click(function(){
     	console.log("hi");
     	if ($(this).hasClass('button_on')) {
