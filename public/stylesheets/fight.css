@@ -1,0 +1,189 @@
+
+
+#player {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: 80%;
+}
+button.player, button.player:hover {
+	display: inline-block;
+	height: 60px;
+	text-align: center;
+	color: white;
+}
+button.player:hover,  
+button.player:link, 
+button.player:visited,
+button.player:active,
+button.player:focus{
+	color: white;
+	outline: none;
+}
+span.player_name {
+	display: block;
+	padding-top: 10px;
+}
+button.player.player2 {
+	margin-left:40px;
+}
+img.player_button {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+div.player_group{
+	text-align: center;
+	display: block;
+	margin: 25px auto;
+	margin-top: 20px;
+}
+
+button.player.player1.button_outline,
+button.player.player2.button_outline {
+	border: #FFBB02 3px solid;
+	background-color: #ad4c4c;
+	padding-top: 3px;
+}
+
+
+button.btn-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; 
+  width: 23px;
+  height: 23px;
+  font-size: 15px;
+  line-height: 15px;
+}
+img.silhouette {
+	height: 375px;
+
+}
+.image-container {
+	display: inline-block;
+    position: relative;
+    float: left;
+    
+}
+button.btn.motor:focus,
+button.btn.motor_red:focus,
+button.btn.motor_green:focus {
+	outline: none;
+}
+button.btn.motor_green {
+	background-color: #BADA55;
+	display: inline;
+	margin: 3px;
+	margin-right: 10px;
+	text-align: left;
+
+}
+button.btn.motor_red {
+	background-color: #8B0000;
+	display: inline;
+	margin: 3px;
+	margin-right: 10px;
+	text-align: left;
+
+}
+
+/* heart */
+button.motor1 {
+	position: absolute;  
+    left: 75px;
+    top: 75px;
+}
+/*left shoulder */
+button.motor2 {
+	position: absolute;  
+    left: 47px;
+    top: 63px;
+}
+/*right shoulder */
+button.motor3 {
+	position: absolute;  
+    left: 122px;
+    top: 57px;
+}
+/* left side */
+button.motor4 {
+	position: absolute;  
+    left: 68px;
+    top: 117px;
+}
+/* right side */
+button.motor5 {
+	position: absolute;  
+    left: 100px;
+    top: 117px;
+}
+/* left forearm */
+button.motor6 {
+	position: absolute;  
+    left: 10px;
+    top: 100px;
+}
+/* right forearm */
+button.motor7 {
+	position: absolute;  
+    left: 160px;
+    top: 100px;
+}
+/* left glove */
+button.motor8 {
+	position: absolute;  
+    left: 37px;
+    top: 125px;
+}
+/* right glove */
+button.motor9 {
+	position: absolute;  
+    left: 125px;
+    top: 125px;
+}
+.wrap {
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: auto;
+}
+button.motor.button_on {
+	background-color: #BADA55;
+}
+
+
+div.box {
+	width:170px;
+	border: 2px solid black;
+	display: inline-block;
+	position: relative;
+	float: left;
+	padding: 5px;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+p.box_text {
+	display: inline;
+	float: none;
+}
+
+button.btn.toggle {
+	width: auto;
+	height: auto;
+	font-size: 12px;
+	margin-top: 10px;
+	color: gray;
+}
+button.btn.toggle.btn-primary {
+	background-color: #8B0000;
+	color:white;
+
+}
+button.btn.toggle.btn-default {
+	background-image: none;
+	background-color: gray;
+	color: white;
+
+}
+
