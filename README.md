@@ -14,6 +14,8 @@ Wear the Suit, and Feel the Punch.
 
 [http://tuftsknockout.herokuapp.com/](http://tuftsknockout.herokuapp.com/)
 
+- For production on Heroku, please change the URI in public/javascripts/vidoe.js & youtube.js for socket.io before pushing to heroku master.
+
 ### Introduction
 
 Feel the rush of the match with Knockout. Become part of the excitement as every hit reverberates on your skin.
