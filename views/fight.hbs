@@ -1,4 +1,28 @@
 {{> mini_navbar}}
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-lg modal_button" data-toggle="modal" data-target="#myModal">
+  <span>Connect Device</span>
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Connect Device</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please connect the device to the website here:</p>
+        <a href="/test_button/loginPhoton?username=tuftsknockout@gmail.com&password=kn0ck0ut"><button class="btn test" type="submit">Connect Photon</button></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal_close" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <h1 class="video-title text-center"> Hagler vs Hearns April 2015</h1>
 <img class="star_dividor video" src="/images/starandlines.png" alt="divider">
 <div id="player"></div>
