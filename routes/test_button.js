@@ -9,14 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('test_button', { title: 'KNOCKOUT' , message: '', path: 'how it works'});
 });
 
-var postPhoton = require('./test_button/postPhoton');
 var loginPhoton = require('./test_button/loginPhoton')
 
 router.use('/', function(req, res, next) {
     next();
 });
 
-router.use('/postPhoton', postPhoton);
 router.use('/loginPhoton', loginPhoton);
 
 module.exports = router;

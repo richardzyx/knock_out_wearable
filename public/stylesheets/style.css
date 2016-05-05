@@ -30,6 +30,7 @@ button.btn {
 .btn {
 	color: white;
 }
+
 img.star_dividor {
 	display: block;
 	width: 350px;
@@ -82,4 +83,5 @@ p.footer {
 }
 div.footer {
 	margin:50px 0;
+	
 }

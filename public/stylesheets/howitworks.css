@@ -1,0 +1,110 @@
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* for IE8 */
+
+    width: 53px;
+    height: 53px;
+    padding: 8px;
+
+    background: transparent;
+    border: 2px solid #8B0000;
+    color: #8B0000;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 15px;
+    float: left;
+    width: 23%;
+
+}
+.page-title-middle {
+    margin-top: 70px;
+}
+.step_number {
+    font-size: 27px;
+    color: #8B0000;
+    text-align: center;
+}
+.textBox {
+
+    width: 250px;
+    height: 50px;
+    padding: 8px;
+
+    background: transparent;
+    border: 2px solid #333333;
+    color: #333333;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.kit_wrap {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.kit_item_margin {
+    margin-left: 30px;
+
+}
+
+.kit_item {
+    text-align: center;
+    float:left;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.kit_name {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+.kit_item img {
+    text-align: center;
+}
+.steps {
+    display: inline-block;
+    width: 100%;
+}
+.webapp {
+    display: inline-block;
+    width: 100%;
+}
+h2.kit {
+    float: left;
+    width: 75%;
+    
+}
+
+div#carousel-steps {
+    
+    float:left;
+    width: 33%;
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+    
+}
+
+.steps_wrap {
+    width: 66%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+}
+
+.steps_text {
+    text-align: center;
+    float:left;
+    margin: 0 auto;
+    margin-left: 150px;
+    width: 27%;
+}

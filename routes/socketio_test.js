@@ -17,3 +17,8 @@ exports.toggle_handler = function (data) {
     // console.log("toggle handler received:"+data);
     return particle_function.toggle(data.motor);
 };
+
+exports.player_handler = function (data) {
+    console.log("player handler received:"+data.player);
+    return particle_function.player_change(data.player);
+};
