@@ -49,6 +49,40 @@ $(document).ready(function(){
       side: 'right',
       source: '#sidr'
     });
+
+    $('#carousel-steps').bind('slid.bs.carousel', function (e) {
+
+        if ($('#carousel-steps li.indicators1').hasClass('active')) {
+            console.log("hi");
+            $('div.text1').addClass('red_text');
+            $('div.text2').removeClass('red_text');
+            $('div.text3').removeClass('red_text');
+            $('div.text4').removeClass('red_text');
+        }
+        if ($('#carousel-steps li.indicators2').hasClass('active')) {
+            console.log("hi");
+            $('div.text1').removeClass('red_text');
+            $('div.text2').addClass('red_text');
+            $('div.text3').removeClass('red_text');
+            $('div.text4').removeClass('red_text');
+        }
+        if ($('#carousel-steps li.indicators3').hasClass('active')) {
+            console.log("hi");
+            $('div.text1').removeClass('red_text');
+            $('div.text2').removeClass('red_text');
+            $('div.text3').addClass('red_text');
+            $('div.text4').removeClass('red_text');
+        }
+        if ($('#carousel-steps li.indicators4').hasClass('active')) {
+            console.log("hi");
+            $('div.text1').removeClass('red_text');
+            $('div.text2').removeClass('red_text');
+            $('div.text3').removeClass('red_text');
+            $('div.text4').addClass('red_text');
+        }
+    });
+
+
 });
 
    
