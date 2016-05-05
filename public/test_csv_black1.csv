@@ -45,8 +45,6 @@ Time,pattern,MotorID,Duration,Intensity,Name,String
 2:03,00,00,00000200,02,parse_motor,00000000020002
 2:04,02,00,00001000,02,parse_motor,02000000100002
 1:28,00,00,00000000,00,change_rate,30
-1:36,00,00,00000000,00,change_rate,"25
-"
-1:43,00,00,00000000,00,change_rate,"27
-"
+1:36,00,00,00000000,00,change_rate,25
+1:43,00,00,00000000,00,change_rate,27
 2:04,00,00,00000000,00,change_rate,20

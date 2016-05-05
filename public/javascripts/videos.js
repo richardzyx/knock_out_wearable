@@ -6,18 +6,22 @@ $(document).ready(function(){
         if ($(this).hasClass('button_outline')) {
             $('button.player.player2').addClass('button_outline');
             $(this).removeClass('button_outline');
+            socket_toggle.emit('player', { player: 2 });
         } else {
             $('button.player.player2').removeClass('button_outline');
             $(this).addClass('button_outline');
+            socket_toggle.emit('player', { player: 1 });
         }
     });
     $('button.player.player2').click(function(){
     	if ($(this).hasClass('button_outline')) {
             $('button.player.player1').addClass('button_outline');
     		$(this).removeClass('button_outline');
+            socket_toggle.emit('player', { player: 1 });
     	} else {
         	$('button.player.player1').removeClass('button_outline');
             $(this).addClass('button_outline');
+            socket_toggle.emit('player', { player: 2 });
         }
     });
     var classNames;
