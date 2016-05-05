@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    var socket_toggle;
+    // socket_toggle = io('http://tuftsknockout.herokuapp.com/');
+    socket_toggle = io('http://localhost:3000/');
     $('button.player.player1').click(function(){
         if ($(this).hasClass('button_outline')) {
             $('button.player.player2').addClass('button_outline');
@@ -17,9 +20,7 @@ $(document).ready(function(){
             $(this).addClass('button_outline');
         }
     });
-    var classNames, socket_toggle;
-    // socket_toggle = io('http://tuftsknockout.herokuapp.com/');
-    socket_toggle = io('http://localhost:3000/');
+    var classNames;
     $('button.motor').click(function(){
     	console.log("hi");
     	if ($(this).hasClass('button_on')) {

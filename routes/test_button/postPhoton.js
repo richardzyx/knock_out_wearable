@@ -41,7 +41,7 @@ router.get('/', function(req, res, next) {    //pass mysql_Service the list of u
     //    function onFulfilled() {
     //        var group = req.body.group;
     //        options.push(group);
-    //        return Promise.all([mysql_service.query_allUsers(options), userTable.name_to_id(req.body.user)]);//TODO: Try tell me WTF is this
+    //        return Promise.all([mysql_service.query_allUsers(options), userTable.name_to_id(req.body.user)]);
     //    }
     //).then(
     //    function onFulfilled(results) {
