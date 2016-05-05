@@ -10,7 +10,7 @@ router.post('/', function(req, res, next) {
     next();
 });
 
-var loginPhoton = require('./test_button/loginPhoton')
+var loginPhoton = require('./test_button/loginPhoton');
 
 router.use('/', function(req, res, next) {
     next();

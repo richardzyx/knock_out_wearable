@@ -28,7 +28,7 @@ router.use('*', function(req, res, next) {
             throw err;
         });
     }).then(function(device_id){
-        return {message: "Success!"};
+        res.render('test_button', { title: 'KNOCKOUT' , message: device_id});
     }).catch(function(err){
         console.log('API call completed on promise fail: ', err);
     });
