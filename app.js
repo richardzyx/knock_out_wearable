@@ -13,6 +13,7 @@ var test_button = require('./routes/test_button');
 var videos = require('./routes/videos');
 var contact = require('./routes/contact');
 var index = require('./routes/index');
+var howitworks = require('./routes/howitworks');
 
 var app = express();
 
@@ -39,7 +40,9 @@ app.use('/test_button', test_button);
 
 app.use('/videos', videos);
 
-app.use('/contact', contact)
+app.use('/contact', contact);
+
+app.use('/howitworks', howitworks);
 
 app.use('/', index);
 

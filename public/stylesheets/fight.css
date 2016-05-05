@@ -1,5 +1,4 @@
 
-
 #player {
 	display: block;
 	margin: 0 auto;
@@ -143,7 +142,7 @@ button.motor9 {
     top: 125px;
 }
 .wrap {
-	width: 30%;
+	width: 32%;
 	text-align: center;
 	margin: 0 auto;
 	overflow: auto;
@@ -185,5 +184,16 @@ button.btn.toggle.btn-default {
 	background-color: gray;
 	color: white;
 
+}
+button.btn.modal_button {
+	position: fixed;
+	top: 50%;
+	right: -125px;
+	background-color: #8b0000;
+		-webkit-transform: rotate(270deg);   
+-moz-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+transform: rotate(270deg);
 }
 

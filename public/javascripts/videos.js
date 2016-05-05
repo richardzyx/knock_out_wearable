@@ -44,6 +44,11 @@ $(document).ready(function(){
         $(this).find('.btn').toggleClass('btn-default');
        
     });
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right',
+      source: '#sidr'
+    });
 });
 
    
