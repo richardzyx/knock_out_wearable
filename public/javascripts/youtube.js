@@ -12,15 +12,13 @@ function onYouTubeIframeAPIReady() {
     height: '390',
     width: '640',
     videoId: '0ixBktB_akQ',
-    startSeconds: 64,
     playerVars: {'iv_load_policy': 3, 'autoplay': 0},
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
     }
   });
-$(window).load(function(){
-
+  $(window).load(function(){
     player.seekTo(64);
   });
 }
@@ -45,7 +43,9 @@ function onPlayerStateChange(event) {
               console.log("in if loop");
               time_recorded = formatTime(time);
               $("#current-time").text(time_recorded);
-              var socket = io('http://localhost:3000/');
+              var socket = io(document.location.protocol+'//'+document.location.host);
+              // var socket = io('http://tuftsknockout.herokuapp.com/');
+              // var socket = io('http://localhost:3000/');
               socket.emit('time', { time: time_recorded });
           }
       }, 100);
