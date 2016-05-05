@@ -12,13 +12,10 @@
     text-align: center;
     font-size: 27px;
     margin-bottom: 15px;
-    float: left;
-    width: 23%;
+
 
 }
-.page-title-middle {
-    margin-top: 70px;
-}
+
 .step_number {
     font-size: 27px;
     color: #8B0000;
@@ -26,7 +23,7 @@
 }
 .textBox {
 
-    width: 250px;
+    width: 100%;
     height: 50px;
     padding: 8px;
 
@@ -39,44 +36,7 @@
     text-align: center;
 }
 
-.kit_wrap {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 30px;
 
-}
-
-.kit_item_margin {
-    margin-left: 30px;
-
-}
-
-.kit_item {
-    text-align: center;
-    float:left;
-    margin: 0 auto;
-    width: 33%;
-}
-
-.kit_name {
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
-    text-align: center;
-}
-.kit_item img {
-    text-align: center;
-}
-.steps {
-    display: inline-block;
-    width: 100%;
-}
-.webapp {
-    display: inline-block;
-    width: 100%;
-}
 h2.kit {
     float: left;
     width: 75%;
@@ -85,9 +45,7 @@ h2.kit {
 
 div#carousel-steps {
     
-    float:left;
-    width: 33%;
-    margin: 0 auto;
+    
     width: 350px;
     text-align: center;
     
@@ -107,4 +65,19 @@ div#carousel-steps {
     margin: 0 auto;
     margin-left: 150px;
     width: 27%;
+}
+.row.kit {
+    margin: 50px auto;
+    width: 85%;
+}
+
+.row.steps {
+    margin: 50px auto;
+    width: 70%;
+
+}
+
+div.textBox.red_text {
+    color: #8B0000;
+    border: 2px solid #8B0000;
 }
